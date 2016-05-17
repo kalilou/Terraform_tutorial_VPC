@@ -44,8 +44,8 @@ resource "aws_vpc" "vpc_tuto" {
 
 #### Subnets 
 In this tutorial we have setup three subnets, one public and two private subnets, what this means is that the public 
-subnet can be accessible from the internet and the private subnets cannot be accessible from the internet, all this involve 
-setting up and configuring the nat gateway, the internet gateway, the routes and the route tables. You can also apply some Security groups and/or ACL to your VPC which 
+subnet can be accessible from the internet and the private subnets cannot be accessible from the internet, and this involves 
+setting up and configuring the nat gateway, the internet gateway, the routes and the route tables. You can also apply some security groups (SG) and/or ACL to your VPC which 
 are not covered in this tutorial. 
 
 So the terraform syntax for creation the subnets will look like the following:
