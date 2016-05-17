@@ -1,4 +1,4 @@
-# Basic AWS VPC with one public subnet and two private subnets
+### Basic AWS VPC with one public subnet and two private subnets
 
 
 This example depicts a creation of a basic AWS VPC
