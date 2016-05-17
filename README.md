@@ -1,4 +1,4 @@
-### Create a basic VPC with `terraform from HashiCorp`
+### Create a basic VPC with terraform from HashiCorp
  
 
 This example depicts a creation of a basic AWS VPC
