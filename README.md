@@ -1,10 +1,10 @@
-### Basic AWS VPC with one public subnet and two private subnets with terraform
-
+### Create a basic VPC with `terraform from HashiCorp`
+ 
 
 This example depicts a creation of a basic AWS VPC
 Resources created:
 * VPC 
-* Subnets
+* Subnets (one public and two privates)
 * Routes 
 * Route tables 
 * Elastic IP (EIP)
