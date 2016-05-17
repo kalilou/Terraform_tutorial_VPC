@@ -34,9 +34,14 @@ resource "aws_vpc" "vpc_tuto" {
 }
 ```
 
-* `resource` is terraform notation. 
+* `resource` is a terraform notation. 
 * `aws_vpc` resource name representing the AWS VPC resource. 
-* `vpc_tuto` Name given the resource VPC which can be used later on the get thing like vpc_id or main_route_table_id
+* `vpc_tuto` is a name given to the resource VPC which can be used later on the get thing like vpc_id or main_route_table_id
+* `cidr_block` is the address ranges given for your VPC 
+* `enable_dns_support` enable or disable DNS support in the VPC. (Default to true if not specified)
+* `enable_dns_hostnames` enable or disable DNS hostnames in the VPC. (Default to false if not specified)
+* `tags` used to tag your VPC with a name
+
 
 
 
