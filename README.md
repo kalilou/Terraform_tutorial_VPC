@@ -1,4 +1,4 @@
-### Basic AWS VPC with one public subnet and two private subnets
+### Basic AWS VPC with one public subnet and two private subnets with terraform
 
 
 This example depicts a creation of a basic AWS VPC
@@ -14,7 +14,7 @@ Resources created:
 
 #### Basic VPC 
 AWS VPC stands for Virtual Private Cloud which basically provides a way to structure your own network the way you want in AWS. 
-Before we dive in let's define some basic VPC basic concepts:
+Before we dive in let's define some basic VPC concepts:
 
 * CIDR - Classless Intern-Domain Routing 
 Let's choose the address ranges which will be `172.31.0.0/16` in binary number give us `1010 1100.1111 0000.0000 0000.0000 0000` 
@@ -69,6 +69,24 @@ resource "aws_subnet" "subnet_eu_west_1a" {
 * `map_public_ip_on_launch` enables public IP mapping which means any ec2 instance created in this subnet will have a public IP, for private subnet this field will be omitted 
 * `availability_zone` Specify in which availability zone the subnet will be created
 * `tags` used to tag your subnet with a name
+
+#### Internet Gateway 
+`coming soon` 
+
+#### Nat Gateway 
+`coming soon` 
+
+#### Route 
+`coming soon` 
+
+#### Route Table 
+`coming soon`
+
+#### Elastic IP (EIP)
+`coming soon` 
+
+#### Route Table Assciation 
+`coming soon `
 
 
 
