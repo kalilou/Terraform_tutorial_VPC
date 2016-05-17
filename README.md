@@ -34,9 +34,9 @@ resource "aws_vpc" "vpc_tuto" {
 }
 ```
 
-`resource` is terraform notation 
-`aws_vpc` resource name representing the AWS VPC resource 
-`vpc_tuto` Name given the resource VPC which can be used later on the get thing like vpc_id or main_route_table_id
+*`resource` is terraform notation. 
+*`aws_vpc` resource name representing the AWS VPC resource. 
+*`vpc_tuto` Name given the resource VPC which can be used later on the get thing like vpc_id or main_route_table_id
 
 
 
