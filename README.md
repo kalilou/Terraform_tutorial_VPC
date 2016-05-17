@@ -20,9 +20,9 @@ Before we dive in let's define some basic VPC concepts:
 Let's choose the address ranges which will be `172.31.0.0/16` in binary number give us `1010 1100.1111 0000.0000 0000.0000 0000` 
 the slash 16 (/16) indicates that the first 16 bits will be fixed and represents the network and the rest 16 bits will represents the hosts. 
 You can also choose any CIDR for your VPC which can be for example 10.0.0.0/16.
-So with the /16 will have 64 000 addresses. Nice 
+So with the /16 you will have 64 000 addresses. Nice 
 
-So the terraform syntax for creation the VPC will look like the following:
+So the terraform syntax for creating the VPC will look like the following:
 ```
 resource "aws_vpc" "vpc_tuto" {
   cidr_block = "172.31.0.0/16"
@@ -48,7 +48,7 @@ subnet can be accessible from the internet and the private subnets cannot be acc
 setting up and configuring the nat gateway, the internet gateway, the routes and the route tables. You can also apply some security groups (SG) and/or ACL to your VPC which 
 are not covered in this tutorial. 
 
-So the terraform syntax for creation the subnets will look like the following:
+So the terraform syntax for creating the subnets will look like the following:
 ```
 resource "aws_subnet" "subnet_eu_west_1a" {
   vpc_id                  = "${aws_vpc.vpc_tuto.id}"
